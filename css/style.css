@@ -1,0 +1,36 @@
+body{
+  font-family: 'Raleway', sans-serif;
+}
+.navbar-dark{
+
+}
+
+.badge-java{
+  color: red;
+  border-color: red;
+  border-radius: 6px;
+  border-style: solid;
+  border-width: thin;
+  padding: 6px;
+  background-color: white;
+}
+
+.badge-android{
+  color: #3e990d;
+  border-color: #3e990d;
+  border-radius: 6px;
+  border-style: solid;
+  border-width: thin;
+  padding: 6px;
+  background-color: white;
+}
+
+.badge-cpp{
+  color: #177cb2;
+  border-color: #177cb2;
+  border-radius: 6px;
+  border-style: solid;
+  border-width: thin;
+  padding: 6px;
+  background-color: white;
+}
