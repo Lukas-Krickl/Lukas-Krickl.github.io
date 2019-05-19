@@ -34,3 +34,9 @@ body{
   padding: 6px;
   background-color: white;
 }
+
+.collapsing {
+-webkit-transition: height .5s ease;
+-o-transition: height .5s ease;
+transition: height .5s ease;
+}
