@@ -1,14 +1,45 @@
+
+
+:root{
+  --java-color: red;
+  --android-color:#3e990d;
+  --cpp-color: #177cb2;
+  --sql-color:;
+  --web-color:;
+
+  --main-bg-color: #f4f4f4;
+  --silver: #e8e8e8;
+
+}
+
+
 body{
   font-family: 'Raleway', sans-serif;
 }
-.drop-menu{
-  margin
 
+.header{
+  background-color: var(--main-bg-color);
+}
+
+.card-header{
+  background-color: #e2e2e2;
+}
+
+.display-4{
+  font-size: 3rem;
+}
+.page-title{
+  height: 100px;
+}
+
+.clear-fix{
+  min-height: 200px;
 }
 
 .badge-java{
-  color: red;
-  border-color: red;
+
+  color: var(--java-color);
+  border-color: var(--java-color);
   border-radius: 6px;
   border-style: solid;
   border-width: thin;
@@ -17,8 +48,8 @@ body{
 }
 
 .badge-android{
-  color: #3e990d;
-  border-color: #3e990d;
+  color: var(--android-color);
+  border-color: var(--android-color);
   border-radius: 6px;
   border-style: solid;
   border-width: thin;
@@ -27,8 +58,8 @@ body{
 }
 
 .badge-cpp{
-  color: #177cb2;
-  border-color: #177cb2;
+  color: var(--cpp-color);
+  border-color: var(--cpp-color);
   border-radius: 6px;
   border-style: solid;
   border-width: thin;
