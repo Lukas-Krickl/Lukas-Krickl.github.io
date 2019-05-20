@@ -4,12 +4,11 @@
   --java-color: red;
   --android-color:#3e990d;
   --cpp-color: #177cb2;
-  --sql-color:;
-  --web-color:;
+  --sql-color:#ef900b;
+  --web-color:#c200c9;
 
   --main-bg-color: #f4f4f4;
   --silver: #e8e8e8;
-
 }
 
 
@@ -28,6 +27,7 @@ body{
 .display-4{
   font-size: 3rem;
 }
+
 .page-title{
   height: 100px;
 }
@@ -37,29 +37,31 @@ body{
 }
 
 .badge-java{
-
   color: var(--java-color);
   border-color: var(--java-color);
-  border-radius: 6px;
-  border-style: solid;
-  border-width: thin;
-  padding: 6px;
-  background-color: white;
 }
 
 .badge-android{
   color: var(--android-color);
   border-color: var(--android-color);
-  border-radius: 6px;
-  border-style: solid;
-  border-width: thin;
-  padding: 6px;
-  background-color: white;
 }
 
 .badge-cpp{
   color: var(--cpp-color);
   border-color: var(--cpp-color);
+}
+
+.badge-sql{
+  color: var(--sql-color);
+  border-color: var(--sql-color);
+}
+
+.badge-web{
+  color: var(--web-color);
+  border-color: var(--web-color);
+}
+
+.lang-badge{
   border-radius: 6px;
   border-style: solid;
   border-width: thin;
