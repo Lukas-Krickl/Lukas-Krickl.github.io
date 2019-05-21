@@ -62,6 +62,7 @@ body{
 }
 
 .lang-badge{
+  margin: 4px;
   border-radius: 6px;
   border-style: solid;
   border-width: thin;
