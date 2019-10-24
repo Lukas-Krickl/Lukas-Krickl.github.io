@@ -103,7 +103,7 @@ function uploadFile() {
   Http.open("PUT", url_file_info, true);
   Http.setRequestHeader("Accept", "application/json");
   Http.setRequestHeader('Content-Type', "application/json");
-  Http.setRequestHeader('Authorization', "token f22f151ca71f330b361daa8ad558724a81188245");
+  Http.setRequestHeader('Authorization', "token 6cb55ecd281f6ff1d624a18b0373390e513f2b61");
   Http.send(JSON.stringify(upload));
   Http.onreadystatechange = function() {
     if (Http.readyState == 4 && Http.status == 200) {
