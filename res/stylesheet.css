@@ -50,12 +50,17 @@ main {
   table-layout: fixed;
 }
 
+.screenfix {
+  position: relative;
+  z-index: 2;
+}
+
 .fancy-font{
   font-family: 'Dancing Script', cursive;
 }
 
 .bg-0 {
-  background-image: url(assets/soedinennye-shtaty-nyu-york-65.jpg);
+  background-image: url(assets/soedinennye-shtaty-nyu-york-65.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -65,7 +70,6 @@ main {
   position: fixed;
   top: 0;
   z-index: 0;
-  filter: blur(2px) brightness(90%);
   overflow-y: hidden;
   overflow-x: hidden;
 }
