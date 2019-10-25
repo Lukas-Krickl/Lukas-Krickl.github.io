@@ -66,6 +66,7 @@ main {
   top: 0;
   z-index: 0;
   transform: scale(1.05);
+  -webkit-transform: scale(1.05);
   filter: blur(2px) brightness(90%);
 }
 
@@ -89,6 +90,7 @@ section {
   height: 100%;
   margin:0px;
   z-index: 10;
+  position: relative;
   color: white;
   scroll-snap-align: center;
   filter: opacity(1);
@@ -99,6 +101,7 @@ section {
 section img {
   filter: invert(100%);
   z-index: 2000;
+  position: relative;
 }
 
 .content-box {
