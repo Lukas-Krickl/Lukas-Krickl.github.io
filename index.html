@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie-edge">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="res/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="res/mainStylesheet.css">
+    <script src="res/mainScript.js"></script>
+    <title>A Schlatzigen Lustlöcher's Christmas Special</title>
+    <link rel="shortcut icon" type="image/png" href="res/assets/Christmas-Gift.svg">
+  </head>
+  <body>
+
+    <nav class="navigator d-none d-md-block">
+      <div class="d-flex justify-content-around border-bottom mx-10 px-10" id="list-example">
+        <a class="navigator-link" href="#list-item-1">Home</a>
+        <a class="navigator-link" href="#list-item-2">Anmelden</a>
+        <a class="navigator-link" href="#list-item-3">Auswählen</a>
+        <a class="navigator-link" href="#list-item-4">Übersicht</a>
+      </div>
+    </nav>
+
+    <main class="wrapper" data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+      <section class="parallax_group d-flex flex-column justify-content-between align-items-center" id="list-item-1">
+        <h2 class="display-2">Phase 2:</h2>
+        <div class="container d-flex flex-column justify-content-around align-items-center phase">
+          <h4 class="display-4 mb-3">Auswählen</h4>
+          <div>
+            <p>Wähle die Personen (bzw. deren Nummer) aus, die du <strong>nicht</strong> ziehen willst.</p>
+            <hr>
+            <h4 class="display-4" id="countdown">--d --h --m --s</h4>
+          </div>
+        </div>
+        <img src="res/assets/chevron-down.svg" height="40px" width="40px" alt="Scroll">
+      </section>
+
+      <section class="parallax_group d-flex flex-column justify-content-between align-items-center">
+        <h2 class="display-3 mb-4">Nächste Phase</h2>
+        <div class="container d-flex flex-column justify-content-around align-items-center phase">
+          <h4 class="display-4 mb-3">Ziehen</h4>
+          <p>Sobald gezogen wurde, kannst du dein Ergebnis mit deiner Nummer und deinem PIN abfragen.</p>
+        </div>
+        <img src="res/assets/chevron-down.svg" height="40px" width="40px" alt="Scroll">
+      </section>
+
+
+      <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Nov 9, 2019 00:00:00").getTime();
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Display the result in the element with id="demo"
+        document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+        + minutes + "m " + seconds + "s ";
+
+        // If the count down is finished, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("countdown").innerHTML = "EXPIRED";
+        }
+      }, 1000);
+      </script>
+
+
+      <div class="parallax_group">
+        <div class="parallax_layer bg-0-far"></div>
+        <div class="parallax_layer bg-1-far"></div>
+        <div class="parallax_layer bg-2-far"></div>
+        <div class="parallax_layer bg-3-far"></div>
+        <div class="parallax_layer bg-4-far"></div>
+        <div class="parallax_layer bg-woods"></div>
+        <div class="parallax_layer title text-center d-flex justify-content-center">
+          <h1 class="fancy-font" >A Schlatzige Lustlöcher´s</h1>
+          <h1 class="fancy-font" >Christmas Special</h1>
+        </div>
+      </div>
+
+
+      <section class="parallax_group d-flex flex-column justify-content-between align-items-center" id="list-item-2">
+        <h2 class="display-3 mb-4">Anmelden</h2>
+        <div class="d-block">
+          <div class="phase text-left">
+            <form onsubmit="getFileInfo(logon); return false;">
+              <div class="form-group">
+                <label for="loginNr">Nummer</label>
+                <select class="form-control" id="loginNr">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
+                  <option value="13">13</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="pinInput">PIN</label>
+                <input type="password" class="form-control" id="loginPIN" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg"  pattern="[0-9]{4,4}" placeholder="4 stellige Zahl" maxlength="4" required data-toggle="tooltip" data-placement="top" title="4 stellige Zahl" name="pin">
+              </div>
+              <div class="d-flex justify-content-center">
+                <button type="submit" class="btn btn-primary" name="anmelden" >Anmelden</button>
+              </div>
+            </form>
+          </div>
+          <div class="phase bg-danger text-white p-3 mt-3" id="angemeldetDiv">
+            <h6 class="font-weight-bold" id="angemeldet">Nicht Angemeldet!</h6>
+            <p id="angemeldetDesc">Ohne Anmeldung werden keine Daten gespeichert!</p>
+          </div>
+
+        </div>
+        <img src="res/assets/chevron-down.svg" height="40px" width="40px" alt="Scroll">
+      </section>
+
+      <section class="parallax_group bg-black d-flex flex-column justify-content-between align-items-center" id="list-item-3">
+        <h2 class="display-3 mb-4">Auswählen</h2>
+
+        <form class="container phase d-flex flex-column justify-content-between align-items-center"  onsubmit="saveSelection(); return false;">
+          <h4 class="font-weight-light mb-4">Ich ziehe nicht...</h4>
+
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="ref0">Nr.</label>
+            </div>
+            <select class="custom-select" id="ref0">
+              <option selected></option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+            </select>
+          </div>
+
+          <div class="input-group mb-3" id="groupDiv1" hidden>
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="ref1">Nr.</label>
+            </div>
+            <select class="custom-select" id="ref1">
+              <option selected></option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+            </select>
+          </div>
+
+          <div class="input-group mb-3" id="groupDiv2" hidden>
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="ref2">Nr.</label>
+            </div>
+            <select class="custom-select" id="ref2">
+              <option selected></option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+            </select>
+          </div>
+
+          <div class="input-group mb-3" id="groupDiv3" hidden>
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="ref3">Nr.</label>
+            </div>
+            <select class="custom-select" id="ref3">
+              <option selected></option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+            </select>
+          </div>
+
+          <button type="button" id="addBtn" class="btn btn-secondary m-3 btn-block" onclick="inputCount++; addInput(inputCount);">+</button>
+          <button type="submit" class="btn btn-success btn-block" name="anmelden">Fertig</button>
+        </form>
+
+        <img src="res/assets/chevron-down.svg" height="40px" width="40px" alt="Scroll">
+      </section>
+
+      <div class="parallax_group">
+
+        <div class="parallax_layer bg-0"></div>
+        <div class="parallax_layer bg-1"></div>
+        <div class="parallax_layer bg-2"></div>
+        <div class="parallax_layer bg-3"></div>
+        <section class="parallax_layer text-center d-flex flex-column justify-content-around align-items-center" id="list-item-4">
+          <h2 class="display-3">Übersicht</h2>
+          <div class="container py-3 rounded-lg bg-lighter">
+            <table class="table table-sm table-borderless table-striped fixed-table m-0">
+              <thead>
+                <tr>
+                  <th scope="col">ID</th>
+                  <th scope="col" colspan="4">Declined</th>
+                </tr>
+              </thead>
+              <tbody id="content-table">
+              
+              </tbody>
+            </table>
+
+          </div>
+          <span></span>
+        </section>
+      </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
