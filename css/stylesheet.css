@@ -1,0 +1,28 @@
+body {
+  background-image: url("../assets/404-traveller.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+p {
+  position: fixed;
+  bottom : 0;
+  left: 16px;
+  color: white;
+  font-size: 1rem;
+  font-family: monospace;
+}
+
+a:link {
+  text-decoration: underline;
+  color: white;
+}
+
+a:visited {
+  text-decoration: underline;
+  color: white;
+}
