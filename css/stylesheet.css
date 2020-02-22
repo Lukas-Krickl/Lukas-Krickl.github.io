@@ -299,18 +299,18 @@ img {
 .page-other {
   padding-left: 9rem;
   padding-right: 1rem;
-  padding-top: 8vh;
-  padding-bottom: 8vh;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .navbar {
   display: flex;
-  justify-content: space-between;
-  width: 90%;
+  justify-content: space-around;
   position: fixed;
   z-index: 10;
   top: 2rem;
-  margin: 0 5%;
+  left: 2rem;
+  right: 2rem;
 }
 
 .navbar a {
@@ -339,15 +339,15 @@ img {
 }
 
 .nav-page-other {
-  display: flex;
+  display: lex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
   width: 8rem;
   position: fixed;
   z-index: 10;
   top: 0;
-  left: 1%;
+  bottom: 0;
+  left: 0.6rem;
   margin: 0;
   animation: slide-in-left .3s ease-out both
 }
@@ -365,19 +365,19 @@ img {
   .page-other {
     padding-left: 2rem;
     padding-right: 1rem;
-    padding-top: 8vh;
-    padding-bottom: 8vh;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .nav-page-1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
     position: fixed;
     z-index: 10;
     top: 0;
-    left: 1%;
+    bottom: 0;
+    left: 0.6rem;
     margin: 0;
     animation: slide-in-left .3s ease-out both
   }
@@ -440,8 +440,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  padding: 5% 5%;
 }
 
 .p1-text-box {

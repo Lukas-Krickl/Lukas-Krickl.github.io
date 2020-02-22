@@ -13,6 +13,7 @@ var enabledPageHeader = 1; //page nr of the enabled header
 const projects =  document.getElementsByClassName("p4-project"); //page 4 projects
 const indicators = document.getElementById('project-indicator').children;
 
+
 //retreive sections from document
 function getPages() {
   let pages = [...document.getElementsByTagName("section")];
@@ -141,6 +142,8 @@ function cycleProject(forwards) {
   //enable new
   projects[newActive].classList.remove('hide');
   indicators[newActive].classList.add('active-indicator');
+
+  document.getElementById('page-4').scrollIntoView();
 }
 
 function findActiveProject() {
