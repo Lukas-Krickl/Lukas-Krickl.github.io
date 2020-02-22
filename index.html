@@ -323,7 +323,8 @@
               <p><b>Team:</b> 4 students</p>
               <p><b>Technology:</b> Java 8, Spring Boot, JUnit5, Mockito, HTML, CSS</p>
               <p><b>My Responsibility: </b><br>I was responsible for a microservice, which monitors the distributed application. It collected and displayed metainformation about the network, other microservices and errors. I also co-designed the architecture, the networking protocol and implemented the message queue.</p>
-              <p><b>Difficulties faced and lessons learned:</b><br></p>
+              <p><b>Difficulties faced and lessons learned:</b><br>The message queue being the central point of communication,
+                 required a architecture design which was very scaleable and capable of parallel execution, if needed.</p>
             </div>
           </div>
         </div>
@@ -339,11 +340,11 @@
               </p>
             </div>
             <div class="p4-body-right">
-              <p><b>Team:</b> Department NGF-N</p>
+              <p><b>Team:</b> Department for system maintenance</p>
               <p><b>Technology:</b> LAMP Stack: RHEL 8, Apache Web Server, MySQL, PHP 7</p>
               <p><b>My Responsibility: </b><br>Assisting at designing the application, implementation and testing of a early prototype version.</p>
               <p><b>Difficulties faced and lessons learned:</b><br>
-                ...
+                (being edited)
               </p>
             </div>
           </div>
@@ -351,12 +352,12 @@
 
         <!-- OVERLAY -->
         <div class="p4-overlay">
-          <button type="button" name="left" onclick="cycleProject(false);"><img src="assets/arrow-left.svg" alt="previous"></button>
+          <button type="button" name="left" onclick="cycleProject(false); return false;"><img src="assets/arrow-left.svg" alt="previous"></button>
           <div class="p4-indicator" id="project-indicator">
             <span class="active-indicator"></span>
             <span></span>
           </div>
-          <button type="button" name="right" onclick="cycleProject(true);"><img src="assets/arrow-right.svg" alt="next"></button>
+          <button type="button" name="right" onclick="cycleProject(true); return false;"><img src="assets/arrow-right.svg" alt="next"></button>
         </div>
       </div>
     </section>

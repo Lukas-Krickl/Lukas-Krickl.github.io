@@ -134,7 +134,7 @@ function toggleFooter(enableFirstPageFooter) {
 function cycleProject(forwards) {
   active = findActiveProject();
   direction = forwards ? 1:-1;
-  newActive = (active+direction) % projects.length;
+  newActive = (active+direction+projects.length) % projects.length;
   //disable old
   projects[active].classList.add('hide');
   indicators[active].classList.remove('active-indicator');
@@ -142,8 +142,6 @@ function cycleProject(forwards) {
   //enable new
   projects[newActive].classList.remove('hide');
   indicators[newActive].classList.add('active-indicator');
-
-  document.getElementById('page-4').scrollIntoView();
 }
 
 function findActiveProject() {
