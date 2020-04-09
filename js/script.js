@@ -26,7 +26,6 @@ function getPages() {
   if (removePage != -1) {
     pages.splice(removePage , 1);
   }
-  console.log('amount of sections: ', pages.length);
   return pages;
 }
 
@@ -36,10 +35,8 @@ function getPageScrollHeight() {
 
   pageScrollHeight.push(0)
   for (var i = 1; i < pages.length; i++) {
-    console.log('i=', i, ' page offset ',pages[i].offsetHeight);
     pageScrollHeight.push(pageScrollHeight[i-1]+pages[i-1].offsetHeight-tolerance); //40px tolerance to change more rapid
   }
-  console.log('page scroll height',  pageScrollHeight);
   return pageScrollHeight;
 }
 

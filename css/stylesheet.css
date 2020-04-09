@@ -9,10 +9,41 @@
   --light-color: #F6F6F6;
 }
 
-/*
-font-family: 'Roboto', sans-serif;
-font-family: 'Roboto Mono', monospace;
-*/
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Roboto Light'), local('Roboto-Light'), url(roboto-font-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto'), local('Roboto-Regular'), url(roboto-font-bolder.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Roboto Mono Light'), local('RobotoMono-Light'), url(roboto-mono-font-normal.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Roboto Mono'), local('RobotoMono-Regular'), url(roboto-mono-font-bolder.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
 
 *,
 *::before,
@@ -53,6 +84,7 @@ section {
 a {
   text-decoration: none;
   transition: 0.15s ease-in-out;
+  color: var(--secondary-color);
 }
 
 a:hover {
@@ -423,7 +455,14 @@ img {
     pointer-events: none;
     cursor: default;
   }
+}
 
+.p1-side-hint {
+  position: absolute;
+  right: 0;
+  top: 15%;
+  background-color: var(--light-color);
+  padding: 1rem;
 }
 
 .footer {
@@ -469,6 +508,12 @@ img {
 @media (max-width: 800px) {
   .p1-face {
     display: none;
+  }
+
+  .p1-side-hint {
+      top: 0;
+      width: 100%;
+      text-align: center;
   }
 }
 

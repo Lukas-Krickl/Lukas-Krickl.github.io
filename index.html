@@ -11,7 +11,7 @@
     <link rel="icon" href="assets/L-icon.svg" sizes="any" type="image/svg+xml">
 
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400|Roboto:300,400&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,400|Roboto:300,400&display=swap" rel="stylesheet"> -->
   </head>
   <body>
     <nav class="navbar nav-page-1" id="navbar">
@@ -27,10 +27,13 @@
         <img src="assets/bootstrap-icons/arrow-down.svg" width="32" height="32" alt=" " >
     </div>
 
-
     <!-- 1st screen about -->
     <section class="page-1" id="page-1">
       <div class="p-content">
+        <div class="p1-side-hint">
+          <h5>Looking for the website <b>Phishing Resistance</b>?</h5>
+          <a href="https://lukas-krickl.github.io/Phishing-Resistance/">to the website</a>
+        </div>
         <div class="p1-container">
           <img class="p1-face" src="assets/lukas-krickl.png" alt=" ">
           <div class="p1-text-box">
@@ -44,7 +47,6 @@
             </div>
           </div>
         </div>
-
       </div>
     </section>
 
@@ -63,7 +65,7 @@
           <div class="p2-edu-box">
             <div class="p2-timeline mt-3">
               <div class="p2-timeline-text primary-light">
-                <h5 class="txt-norm">BSc.Computer Science</h5>
+                <h5 class="txt-norm">BSc. Computer Science</h5>
                 <p>
                   University of Vienna<br><br>
                   Starting in 3rd semester as the progress of my previous studies got accredited.
@@ -167,7 +169,7 @@
           </div>
           <div class="p2-timeline">
             <div class="p2-timeline-text primary-light">
-              <h5 class="txt-norm">BSc.Computer Science</h5>
+              <h5 class="txt-norm">BSc. Computer Science</h5>
               <p>
                 University of Vienna<br><br>
                 Starting in 3rd semester as the progress of my previous studies got accredited.
@@ -298,8 +300,33 @@
         <h2>Projects</h2>
       </div>
       <div class="p-content p4-box">
-        <!-- DSE project -->
+        <!-- Phishing Resistance -->
         <div class="p4-project">
+          <h3>Phishing Resistance:</h3>
+          <h4><a href="https://lukas-krickl.github.io/Phishing-Resistance/">https://lukas-krickl.github.io/Phishing-Resistance/</a></h4>
+
+          <h4>Personal Project</h4>
+          <div class="p4-pbody">
+            <div class="p4-body-left">
+                <p><b>Description: </b><br>Phishing Resistance is a website for practising the identification of fake e-mails or websites and therefore becoming more resistant to phishing attacks. The idea for this project originated from the lecture “Network Security” of the University of Vienna.<br>
+                It is designed as a game where a website or e-mail is displayed and the user has to choose if it is a phishing attack or not. After the user faced a phishing attack,
+                 information and hints on how to spott this attack are displayed and therefore he is becoming more resistant to these attacks. Results of the user's performance can be viewed to.
+              </p>
+            </div>
+            <div class="p4-body-right">
+              <p><b>Team:</b> Myself</p>
+              <p><b>Technology:</b> HTML, CSS, Java Script</p>
+              <p><b>Difficulties faced and lessons learned:</b><br>The website is hosted on the github pages plattform, which is very limited in bandwidth and options.
+                 With this hosting plattform you can only provide static websited, that is only HTML, CSS, JS and no backend functionality.
+                 This limitation asked for a database without backend technology and i developed a mechanism using a semi-structured datamodel, very similar to the technology of
+                NoSQL document databases like MongoDB. Data is loaded dynamicly out of JSON files, stored on the server.
+             </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- DSE project -->
+        <div class="p4-project hide">
           <h3>University Project: IoT Microservice Application</h3>
           <h4>University of Vienna</h4>
           <div class="p4-pbody">
@@ -307,16 +334,13 @@
               <p><b>Description: </b><br>The task was to design and implement a internet of things application which consists of 5 types of microservices:<br><br>
                 1. Message Queue: Central communication service which receives, stores and distributes messages to and from all other microservices.
                 <br><br>
-                2. Monitoring Component: Monitores the status and performance of the message queue and other connected services.
+                2. Monitoring Component: Monitors the status and performance of the message queue and other connected services.
                 <br><br>
                 3. Result Output Service: Takes data computed by microservice 4 and displays the result on a web page.
                 <br><br>
-                4. Machinelearning Service: Aggregates values produced by microservice 5 and performs statistical analysis.
+                4. Machine learning Service: Aggregates values produced by microservice 5 and performs statistical analysis.
                 <br><br>
                 5. IoT Simulation Service: Simulates up to multiple thousands of little sensor devices, which observe their environment and produce sensor values;
-
-
-
               </p>
             </div>
             <div class="p4-body-right">
@@ -344,7 +368,8 @@
               <p><b>Technology:</b> LAMP Stack: RHEL 8, Apache Web Server, MySQL, PHP 7</p>
               <p><b>My Responsibility: </b><br>Assisting at designing the application, implementation and testing of a early prototype version.</p>
               <p><b>Difficulties faced and lessons learned:</b><br>
-                (being edited)
+                One major difficulty was to embed the SNMP protocol so that configured devices and new ones could be included into the system effortless. Whereas the protocol
+                itself is standardized, the MiB configuration (the mapping of addresses to specific sensors) isn´t and every device manufacturer has a different mapping without clear declaration.
               </p>
             </div>
           </div>
@@ -355,6 +380,7 @@
           <button type="button" name="left" onclick="cycleProject(false); return false;"><img src="assets/arrow-left.svg" alt="previous"></button>
           <div class="p4-indicator" id="project-indicator">
             <span class="active-indicator"></span>
+            <span></span>
             <span></span>
           </div>
           <button type="button" name="right" onclick="cycleProject(true); return false;"><img src="assets/arrow-right.svg" alt="next"></button>
@@ -375,7 +401,7 @@
           </div>
           <div class="primary-very-light">
             <h3>Restoring Cars</h3>
-            <p>Currently i am working on a BMW e36 318iS built in 1997. </p>
+            <p>Currently I am working on a BMW e36 318iS built in 1997. </p>
           </div>
         </div>
       </div>
