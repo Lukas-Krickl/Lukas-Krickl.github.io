@@ -459,10 +459,15 @@ img {
 
 .p1-side-hint {
   position: absolute;
+  display: flex;
   right: 0;
   top: 15%;
   background-color: var(--light-color);
   padding: 1rem;
+}
+
+.p1-side-hint img {
+  margin-right: .5rem;
 }
 
 .footer {
@@ -511,9 +516,15 @@ img {
   }
 
   .p1-side-hint {
+    display: block;
       top: 0;
       width: 100%;
       text-align: center;
+      padding:.6rem;
+  }
+
+  .p1-side-hint img {
+    display: none;
   }
 }
 
