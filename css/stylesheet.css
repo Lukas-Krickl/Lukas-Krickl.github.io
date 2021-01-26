@@ -324,6 +324,10 @@ img {
   font-family: 'Roboto Mono', monospace;
 }
 
+.thin-font {
+  font-weight: 300;
+}
+
 .align-items-center {
   align-items: center;
 }
@@ -595,7 +599,6 @@ img {
   padding: 2rem;
   margin: 0 2%;
   background-color: rgba(255,255,255,0.4);
-  max
 }
 
 .p4-project {
@@ -681,24 +684,22 @@ img {
 }
 
 .p5-container p {
+  margin-top: .5rem;
   font-family: 'Roboto Mono', monospace;
   font-weight: 300;
 }
 
 .p6-box {
   text-align: center;
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-.p6-box div {
-  margin-top: 2rem;
+.p6-box > div {
   margin-bottom: 10%;
   background-color: rgba(255, 255, 255, 0.4);
-}
-
-.p6-box table {
-  text-align: center;
-  padding: 1rem;
-  width: 100%;
 }
 
 .p6-box img {
@@ -707,31 +708,39 @@ img {
   margin-right: auto;
 }
 
-.p6-box tr {
-  height: 2.5rem;
-}
 
 .p6-links {
   font-family: 'Roboto Mono', monospace;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: repeat(4, 1fr);
+  row-gap: 1rem;
+  padding: 2rem;
+  align-items: center;
 }
 
 .p6-links a {
   color: var(--primary-color-light);
 }
 
-.p6-available {
-  font-weight: 300;
-  text-align: left;
+.p6-links b {
+  font-size: 1.2rem;
 }
 
-.p6-available table {
-  text-align: left;
+
+.p6-available {
+  font-weight: 300;
+  display: grid;
+  grid-template-columns: 1rem 1fr auto;
+  grid-template-rows: repeat(3, 1fr);
+  column-gap: .5rem;
+  row-gap: 1rem;
+  padding: 2rem;
 }
 
 .p6-available img {
-  margin-right: 1rem;
+  margin-top: .2rem;
 }
-
 
 @media (max-width: 800px) {
   h1, h2, h3, h4, h5, h6 {
@@ -762,6 +771,7 @@ img {
     font-size: 1rem;
     font-weight: 400;
   }
+
 
   .page-other {
     padding: 2rem 1rem 2rem 2rem;
@@ -850,19 +860,12 @@ img {
   .p3-container {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    row-gap: 10%;
+    justify-items: start;
   }
 
-  .p3-item-2 {
-
-  }
-
-  .p3-item-3 {
-
-  }
-
-  .p3-item-4 {
-
+  
+  .p3-container > div {
+   margin-left: 30%;
   }
 
   .p4-box {
@@ -892,9 +895,25 @@ img {
     max-width: 70%;
     margin-bottom: 1rem;
   }
-}
 
-@media (max-width: 350px) {
+  .p6-links {
+    margin-top: .5rem;
+    padding: .5rem;
+    column-gap: 0rem;
+    row-gap: 0rem;
+  }
+
+  .p6-links img {
+    width: 60px;
+    height: auto;
+    max-height: 30px;
+  }
+
+  .p6-available {
+    padding: .5rem;
+    column-gap: 0rem;
+    margin:0;
+  }
 
 
 }
