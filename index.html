@@ -370,6 +370,35 @@
             </div>
           </div>
         </div>
+        <!-- password project -->
+        <div class="p4-project hide">
+          <h3>doesyourpasswordsuck.com / isdeinpasswortoasch.at:</h3>
+          <h4><a href="https://lukas-krickl.github.io/doesyourpasswordsuck.com/"
+              target="_blank">https://lukas-krickl.github.io/doesyourpasswordsuck.com/</a></h4>
+        
+          <h4>Personal Project</h4>
+          <div class="p4-pbody">
+            <div class="p4-body-left">
+              <p><b>Description: </b><br>The website was created initially as part of a lecture project of the University of Vienna with a focus on cloud computing.
+                 The original project consisted of multiple microservices hosted on 
+                amazon web services, utilizing the platform as a service model. AWS services like the SQS and SNS message queue, 
+                Elastic Beanstalk, S3 cloud storage, EC2 virtual machines and Cloud Watch were used to provide the backend functionality of the website.
+                <br>After the lecture completed and the budget for the AWS services was exhausted, I replaced the backend microservices with API calls
+                to various free services so that the website can continue to function.   
+              </p>
+            </div>
+            <div class="p4-body-right">
+              <p><b>Team:</b> Myself</p>
+              <p><b>Technology:</b> AWS services, Java 11, Spring Framework, HTML, CSS, Java Script</p>
+              <p><b>Difficulties faced and lessons learned:</b><br>
+                One major task was to create an architectural design for a horizontally scalable microservice application. 
+                Some requirements for the project, given by the professors of the lecture, were to implement several cloud service patterns
+                like for example "Publish/Subscribe", "Pipes and Filters" or "Sharding". To create such an architecture, I also 
+                did a lot of research regarding efficient dataflow and network protocols.
+              </p>
+            </div>
+          </div>
+        </div>
 
         <!-- DSE project -->
         <div class="p4-project hide">
@@ -424,6 +453,7 @@
           <button type="button" name="left" onclick="cycleProject(false); return false;"><img src="assets/arrow-left.svg" alt="previous"></button>
           <div class="p4-indicator" id="project-indicator">
             <span class="active-indicator"></span>
+            <span></span>
             <span></span>
             <span></span>
           </div>
