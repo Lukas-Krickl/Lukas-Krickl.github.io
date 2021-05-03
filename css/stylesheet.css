@@ -422,6 +422,13 @@ img {
   border-right: 6px solid  var(--primary-color);
 }
 
+.grow-2 {
+  flex-grow: 2;
+}
+
+.grow-1 {
+  flex-grow: 1;
+}
 
 .p3-container {
   width: 100%;
