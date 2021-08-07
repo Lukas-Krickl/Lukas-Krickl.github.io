@@ -11,7 +11,6 @@
   <meta property="og:image" content="https://lukas-krickl.github.io/assets/L-icon.svg">
   <title>Lukas Krickl Portfolio</title>
   <link rel="icon" href="assets/L-icon.svg" sizes="any" type="image/svg+xml">
-
   <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 </head>
 
@@ -28,7 +27,6 @@
   <div class="footer" id="footer-arrow">
     <img src="assets/bootstrap-icons/arrow-down.svg" width="32" height="32" alt=" ">
   </div>
-
   <!-- 1st screen about -->
   <section class="page-1" id="page-1">
     <div class="p1-content">
@@ -42,8 +40,8 @@
       <img class="p1-face" src="assets/lukas-krickl.png" alt=" ">
       <div class="p1-text-box">
         <h3>Hey, i am</h3>
-        <h1>Lukas Krickl</h1>
-        <h5>a software engineer studying <br>BSc. Computer Science at the University of Vienna </h5>
+        <h1>Lukas Krickl BSc</h1>
+        <h5>a software engineer with a fokus <br> on backend development.</h5>
         <a class="btn secondary" href="#page-6">
           <h5>let's get in touch</h5>
         </a>
@@ -56,7 +54,6 @@
       </div>
     </div>
   </section>
-
   <!-- 2nd screen education and experience-->
   <section class="page-other" id="page-2">
     <div class="p-header">
@@ -70,9 +67,7 @@
       <div class="p2-container">
         <!-- EDUCATION -->
         <div class="p2-edu-box">
-
-
-          <div class="p2-timeline">
+          <div class="p2-timeline invisible">
             <div class="p2-timeline-text primary-light">
               <h5 class="txt-norm">MSc. Computer Science</h5>
               <p class="">
@@ -110,6 +105,17 @@
         </div>
         <!-- EXPERIENCE -->
         <div class="p2-exp-box">
+          <div class="p2-timeline mt-2">
+            <div class="p2-timeline-text primary-very-light">
+              <h5 class="txt-norm">Upstream Mobility</h5>
+              <p>
+                Full time Java developer
+              </p>
+            </div>
+            <div class="p2-timeline-year">
+              <span>August 2021 - Today</span>
+            </div>
+          </div>
           <div class="p2-timeline mt-2">
             <div class="p2-timeline-text primary-very-light">
               <h5 class="txt-norm">Internship at Wiener Netze GmbH</h5>
@@ -169,23 +175,21 @@
       </div>
     </div>
   </section>
-
   <section class="page-other" id="page-2-1">
     <div class="p-header">
       <h2>Education and Experience</h2>
     </div>
     <div class="p-content">
       <div class="p2-mobile-container">
-        <div class="p2-timeline">
-          <div class="p2-timeline-text primary-light">
-            <h5 class="txt-norm">MSc. Computer Science</h5>
-            <p class="">
-              University of Vienna<br><br>
-              Starting in master studies while doing my bacherlor's degree.
+        <div class="p2-timeline mt-2">
+          <div class="p2-timeline-text primary-very-light">
+            <h5 class="txt-norm">Upstream Mobility</h5>
+            <p>
+              Full time Java developer
             </p>
           </div>
           <div class="p2-timeline-year">
-            <span>2021 - today</span>
+            <span>August 2021 - Today</span>
           </div>
         </div>
         <div class="p2-timeline">
@@ -513,26 +517,29 @@
     </div>
     <div class="p-content">
       <div class="p6-box">
-        <p class="monospace txt-norm">For my resume (Lebenslauf)<br> write me an e-mail.</p>
-        <div class="p6-links">
-          <img src="assets/bootstrap-icons/envelope-fill.svg" height="40px" width="auto" alt="e-mail">
-          <span>Lukas.Krickl@outlook.at</span>
-          <b>PGP:</b>
-          <a class="thin-font" href="assets/OpenPGP_public_key_krickl_lukas.asc" target="blank">2362 3386 119E BEE3 3D16
-            FF45 FAA8 F170 3596 1612</a>
-          <img src="assets/tm-icons/GitHub_Logo.png" height="20px" width="auto" alt="Github">
-          <a href="https://github.com/Lukas-Krickl">visit my profile</a>
-          <img src="assets/tm-icons/LI-Logo-sm.png" height="25px" width="auto" alt="LinkedIn">
-          <a href="https://www.linkedin.com/in/lukas-krickl-520757180">visit my profile</a>
+        <div class="p6-available-box">
+          <p class="monospace txt-norm">For my resume (Lebenslauf)<br> write me an e-mail.</p>
+          <div class="p6-links">
+            <img src="assets/bootstrap-icons/envelope-fill.svg" height="40px" width="auto" alt="e-mail">
+            <span>Lukas.Krickl@outlook.at</span>
+            <b>PGP:</b>
+            <a class="thin-font" href="assets/OpenPGP_public_key_krickl_lukas.asc" target="blank">2362 3386 119E BEE3 3D16
+              FF45 FAA8 F170 3596 1612</a>
+            <img src="assets/tm-icons/GitHub_Logo.png" height="20px" width="auto" alt="Github">
+            <a href="https://github.com/Lukas-Krickl">visit my profile</a>
+            <img src="assets/tm-icons/LI-Logo-sm.png" height="25px" width="auto" alt="LinkedIn">
+            <a href="https://www.linkedin.com/in/lukas-krickl-520757180">visit my profile</a>
+          </div>
+
         </div>
-        <h3>Availability</h3>
-        <div class="p6-available">
-          <img src="assets/dott.svg" alt="+">
-          <span>June 2021</span>
-          <span>Finishing BSc. Computer Science</span>
-          <img src="assets/dott.svg" alt="+">
-          <span>July 2021</span>
-          <span>Searching for a position as software engineer</span>
+        <div class="p6-available-box">
+          <h3>Availability</h3>
+          <p>Currenly I am working fulltime at <a href="https://www.upstream-mobility.at/" target="_blank">Upstream Mobility</a></p>
+          <div class="p6-available-content">
+            <img src="assets/dott.svg" alt="+">
+            <span>October 2024</span>
+            <span>Starting MSc. Computer Science</span>
+          </div>
         </div>
       </div>
     </div>
