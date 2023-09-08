@@ -20,7 +20,7 @@
     <a href="#page-2"><span class="nav-text">Education and Experience</span></a>
     <a href="#page-3"><span class="nav-text">Skills and Tools</span></a>
     <a href="#page-4"><span class="nav-text">Projects</span></a>
-    <a href="#page-5"><span class="nav-text">What else i do</span></a>
+    <a href="#page-5"><span class="nav-text">What else?</span></a>
     <a href="#page-6"><span class="nav-text">Contact</span></a>
   </nav>
   <!-- Arrow down icon -->
@@ -30,18 +30,11 @@
   <!-- 1st screen about -->
   <section class="page-1" id="page-1">
     <div class="p1-content">
-      <div class="p1-side-hint hide">
-        <img src="assets/phishing-resistance-logo-lg-squared.svg" height="50px" alt=" ">
-        <div class="">
-          <h5>Looking for the website <b>Phishing Resistance</b>?</h5>
-          <a href="https://lukas-krickl.github.io/Phishing-Resistance/" target="_blank">to the website</a>
-        </div>
-      </div>
       <img class="p1-face" src="assets/lukas-krickl.png" alt=" ">
       <div class="p1-text-box">
         <h3>Hey, i am</h3>
         <h1>Lukas Krickl BSc</h1>
-        <h5>a software engineer with a fokus <br> on backend development.</h5>
+        <h5>a software engineer with an emphasis <br> on backend development and security.</h5>
         <a class="btn secondary" href="#page-6">
           <h5>let's get in touch</h5>
         </a>
@@ -289,46 +282,46 @@
           <li>CSS</li>
           <li>JavaScript</li>
           <li>TypeScript</li>
-          <li>PHP</li>
           <li>SQL</li>
         </ul>
       </div>
       <div>
-        <h4>Frameworks</h4>
+        <h4>Frameworks and Libraries</h4>
         <ul>
-          <li>Spring Framework: Web, Web Flux, Cloud Gateway, <br>Security, Session, Data</li>
+          <li>Spring Framework: Web, Web Flux, Cloud Gateway, <br>Security, Data</li>
+          <li>Project Reactor</li>
           <li>Angular</li>
-          <li>JUnit5</li>
-          <li>Mockito</li>
-          <li>Flask</li>
-          <li>Bootstrap</li>
+          <li>JUnit5, Mockito, Wiremock</li>
+          <li>Thymeleaf</li>
           <li>JPA, JDBC, R2DBC</li>
         </ul>
       </div>
       <div>
         <h4>Tools</h4>
         <ul>
-          <li>Docker, Docker Compose</li>
           <li>Kubernetes</li>
-          <li>Google Cloud Plattform</li>
+          <li>Helm</li>
+          <li>Docker, Docker Compose</li>
+          <li>Azure Kubernetes Service (AKS)</li>
           <li>AWS Cloud Services</li>
+          <li>Google Cloud Plattform (GKE)</li>
           <li>MongoDB</li>
           <li>MySQL</li>
-          <li>Git, Gitlab CI/CD</li>
+          <li>Jenkins, CI/CD</li>
+          <li>Grafana Observability Stack</li>
+          <li>ELK Stack</li>
           <li>Jetbrains IDEs</li>
-          <li>Gradle</li>
           <li>Nginx</li>
-          <li>Apache Webserver</li>
         </ul>
       </div>
       <div>
         <h4>OS</h4>
         <ul>
           <li>Windows</li>
-          <li>Fedora</li>
-          <li>RHEL 8</li>
-          <li>Arch Linux</li>
           <li>Ubuntu</li>
+          <li>RHEL 8</li>
+          <li>Fedora</li>
+          <li>Arch Linux</li>
         </ul>
       </div>
 
@@ -342,8 +335,39 @@
       <h2>Projects</h2>
     </div>
     <div class="p-content p4-box">
-      <!-- Phishing Resistance -->
+      <!-- Reactor Tutorial -->
       <div class="p4-project">
+        <h3>Project Reactor Tutorial: From Zero To Hero</h3>
+        <h4><a href="https://gist.github.com/Lukas-Krickl/50f1daebebaa72c7e944b7c319e3c073" target="_blank">Tutorial
+            Series</a></h4>
+        <h4>Personal Project</h4>
+        <div class="p4-pbody">
+          <div class="p4-body-left">
+            <p><b>Description: </b><br>
+              This tutorial started from a collection of notes and resulted in a series of blog-post style pages that cover the java
+              reactor library from its basic concepts to internal implementation details, thus the name 'From Zero to Hero'. It should
+              complete, connect, and summarise already available material and complement the official reference and java-doc
+              documentation.
+              Some chapters are already accessible, but the remaining will be available as soon as I finish writing them.
+            </p>
+          </div>
+          <div class="p4-body-right">
+            <b>Chapters</b>
+            <ol>
+              <li>Why and when to use Reactor</li>
+              <li>Publish Subscribe</li>
+              <li>Reactor Operators</li>
+              <li>Reactor Operators 2</li>
+              <li>Observability</li>
+              <li>Testing</li>
+              <li>Threading</li>
+              <li>RSockets</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <!-- Phishing Resistance -->
+      <div class="p4-project hide">
         <h3>Phishing Resistance:</h3>
         <h4><a href="https://lukas-krickl.github.io/Phishing-Resistance/"
             target="_blank">https://lukas-krickl.github.io/Phishing-Resistance/</a></h4>
@@ -363,12 +387,10 @@
           <div class="p4-body-right">
             <p><b>Team:</b> Myself</p>
             <p><b>Technology:</b> HTML, CSS, Java Script</p>
-            <p><b>Difficulties faced and lessons learned:</b><br>The website is hosted on the github pages plattform,
+            <p><b>Difficulties faced and lessons learned:</b><br>The website is hosted on the github pages platform,
               which is very limited in bandwidth and options.
               Github pages only provides hosting of static content, that is only HTML, CSS, JS and no backend
               functionality.
-              This limitation asked for a database solution without backend technology and I developed a mechanism using
-              a semi-structured datamodel. Data is loaded dynamicly out of JSON files, stored on the server.
             </p>
           </div>
         </div>
@@ -445,32 +467,6 @@
         </div>
       </div>
 
-      <!-- NMS project -->
-      <div class="p4-project hide">
-        <h3>Network Management System</h3>
-        <h4>Wiener Netze GmbH</h4>
-        <div class="p4-pbody">
-          <div class="p4-body-left">
-            <p><b>Description: </b><br> The Network Management System is a web based application which provides
-              documentation, monitoring and troubleshooting functionality of network components in the metropolitan area
-              network of the department.
-            </p>
-          </div>
-          <div class="p4-body-right">
-            <p><b>Team:</b> Department for system maintenance</p>
-            <p><b>Technology:</b> LAMP Stack: RHEL 8, Apache Web Server, MySQL, PHP 7</p>
-            <p><b>My Responsibility: </b><br>Assisting at designing the application, implementation and testing of a
-              early prototype version.</p>
-            <p><b>Difficulties faced and lessons learned:</b><br>
-              One major difficulty was to embed the SNMP protocol so that pre-configured devices and new ones could be
-              included into the system effortless. Whereas the protocol
-              itself is standardized, the MiB configuration (the mapping of addresses to specific sensors) isn´t and
-              every device manufacturer has a different mapping without clear declaration.
-            </p>
-          </div>
-        </div>
-      </div>
-
       <!-- OVERLAY -->
       <div class="p4-overlay">
         <button type="button" name="left" onclick="cycleProject(false); return false;"><img src="assets/arrow-left.svg"
@@ -490,7 +486,7 @@
   <!-- 5th screen other stuff-->
   <section class="page-other" id="page-5">
     <div class="p-header">
-      <h2>What else I do is</h2>
+      <h2>What else?</h2>
     </div>
     <div class="p-content ">
       <div class="p5-container">
@@ -522,9 +518,6 @@
           <div class="p6-links">
             <img src="assets/bootstrap-icons/envelope-fill.svg" height="40px" width="auto" alt="e-mail">
             <span>Lukas.Krickl@outlook.at</span>
-            <b>PGP:</b>
-            <a class="thin-font" href="assets/OpenPGP_public_key_krickl_lukas.asc" target="blank">2362 3386 119E BEE3 3D16
-              FF45 FAA8 F170 3596 1612</a>
             <img src="assets/tm-icons/GitHub_Logo.png" height="20px" width="auto" alt="Github">
             <a href="https://github.com/Lukas-Krickl">visit my profile</a>
             <img src="assets/tm-icons/LI-Logo-sm.png" height="25px" width="auto" alt="LinkedIn">
@@ -534,11 +527,12 @@
         </div>
         <div class="p6-available-box">
           <h3>Availability</h3>
-          <p>Currenly I am working fulltime at <a href="https://www.upstream-mobility.at/" target="_blank">Upstream Mobility</a></p>
+          <p>Currenly I am working fulltime at <a href="https://www.upstream-mobility.at/" target="_blank">Upstream
+              Mobility</a></p>
           <div class="p6-available-content">
             <img src="assets/dott.svg" alt="+">
-            <span>October 2024</span>
-            <span>Starting MSc. Computer Science</span>
+            <span>Summer 2024</span>
+            <span>ISC² CISSP Certification</span>
           </div>
         </div>
       </div>
