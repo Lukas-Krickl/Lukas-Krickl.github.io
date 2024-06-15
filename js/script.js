@@ -1,4 +1,3 @@
-//get elements once, no redundant DOM access
 const navbar = document.getElementById('navbar');
 const navItems = navbar.children;
 const footerArrow = document.getElementById('footer-arrow');
@@ -14,7 +13,6 @@ const projects =  document.getElementsByClassName("p4-project"); //page 4 projec
 const indicators = document.getElementById('project-indicator').children;
 
 
-//retreive sections from document
 function getPages() {
   let pages = [...document.getElementsByTagName("section")];
   let removePage = -1; //for removing not displayed sections
@@ -29,7 +27,7 @@ function getPages() {
   return pages;
 }
 
-//compute and returns a list of heights where each page starts
+//compute and returns a list of scroll heights where each page starts
 function getPageScrollHeight() {
   let pageScrollHeight = [];
 
@@ -69,7 +67,7 @@ window.addEventListener('scroll', () => {
     toggleNavActive(6);
   }
 
-  //toggle fisrt page header and other page header
+  //toggle first page header and other page header
   if (this.scrollY < pageScrollHeight[1] && navbar.classList.contains('nav-page-other')) {
     navbar.classList.remove('nav-page-other');
     navbar.classList.add('nav-page-1');

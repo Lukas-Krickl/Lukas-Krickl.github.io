@@ -339,11 +339,10 @@ img {
 
 .p1-face {
   margin-right: 2rem;
-  height: 18rem;
+  height: 22rem;
   width: auto;
   background-color: rgba(255, 255, 255, 0.15);
   border-radius: 50%;
-  filter: saturate(0.8) brightness(110%);
 }
 
 .p1-text-box {
